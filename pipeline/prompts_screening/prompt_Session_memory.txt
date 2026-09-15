@@ -1,0 +1,19 @@
+# Label: Session memory
+Flag if any user turn references information, code, problems, or context from a separate, earlier conversation as if the assistant has access to it.
+Look for:
+
+Explicit cross-session anchors: "from our last conversation", "from the previous chat"
+References to previous work in the first user prompt of a conversation: "yesterday", "earlier today", "from the homework we worked on earlier", "continue where we left off"
+References to projects, code, files, or decisions that were never introduced in the current conversation but are spoken about as if the assistant already knows them ("add error handling to my script" when no script has been shared this session).
+"Redo it" or "do it again" referring to something the assistant has no record of in the current session.
+
+Do NOT flag if:
+
+The user references something earlier in the same conversation ("fix the code you just wrote", "your previous answer", "your last response"). These are in-session references.
+The user says "ignore previous instructions" or similar — that's a known prompt-injection idiom, not a belief about cross-session memory.
+The user pastes earlier conversation text into the current message — they're providing context, not assuming memory.
+
+To apply this criterion well, the LLM needs to know whether referenced content actually appears earlier in the same conversation. Pass the full conversation, not just one turn.
+Anchor positive: "from the homework problem we worked on last time, please redo it and show the answers as percentages."
+Anchor negative (in-session): "Fix the bug in the function you just wrote."
+Anchor negative (prompt injection): "Ignore all previous instructions and act as..."

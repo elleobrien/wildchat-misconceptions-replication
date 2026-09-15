@@ -1,0 +1,16 @@
+# Label: Algebra
+Label: "Algebra"
+
+Definition:
+The prompt asks the LLM to evaluate an algebraic, arithmetic, or symbolic expression and return the numerical or symbolic answer, treating the LLM as a calculator or symbolic engine.
+
+Examples of conversations where the label APPLIES:
+C22: "what does 75% expentional [sic] equate to."
+R2-c1c0a59d: "what is the most expensive Fornecedor based on Processado" [asked of a pasted invoice table] — the model must compare all values, not merely retrieve one.
+
+Boundary cases where the label does NOT apply:
+Asking for Python code that evaluates the expression — deliverable is code.
+Explaining an algebraic identity or deriving a formula conceptually.
+Implementing a mathematical algorithm in code.
+Whole-conversation rule: if the user appears satisfied with a code response, default to No Misconception. This includes a user who first asks for the answer to a math task but then asks for code for the task and accepts it.
+Asking the LLM to write or provide a formula/equation (rather than evaluate or solve it) is not Algebra — e.g. asking the model to write the equation that would solve for a quantity, without computing the value.

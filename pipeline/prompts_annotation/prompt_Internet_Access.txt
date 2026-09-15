@@ -1,0 +1,15 @@
+# Label: Internet Access
+Label: "Internet Access"
+
+Definition:
+The prompt assumes the LLM can read content from a URL or other live web/internet resource. Includes API calls and web scraping where the target site's structure must be known. Also applies when a URL is offered as reference material the LLM is expected to consult — documentation, a repository, a specification, or a page the user points to in support of the task. The fetch need not be necessary for the task to proceed: offering the link at all presumes the LLM can retrieve it.
+
+Examples of conversations where the label APPLIES:
+C18: "from the data provided here" [followed by GitHub repository link, then a question about controlling Wi-Fi enabled smart devices].
+C24: "use a genetic  to optimize the features and parameters of a  learning model for predicting the survival of passengers aboard the titanic" [followed by link to Kaggle dataset]
+
+Boundary cases where the label does NOT apply:
+Vague phrases like "modern UI off the internet" — default to No Misconception.
+A URL appearing only inside pasted code, tracebacks, or error messages.
+Requests for a generic scraper template against an unspecified site.
+Placeholder or template URLs (e.g., example.com, or a URL inside a format/JSON example the user supplies) — the task does not depend on fetching them.

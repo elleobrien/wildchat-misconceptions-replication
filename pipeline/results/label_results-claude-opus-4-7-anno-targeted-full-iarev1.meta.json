@@ -1,0 +1,15 @@
+{
+  "output_csv": "label_results-claude-opus-4-7-anno-targeted-full-iarev1.csv",
+  "model": "claude-opus-4-7",
+  "stage": "annotation",
+  "sandwich": true,
+  "derivation": "MERGE (not a fresh run): base targeted-full with all Internet Access rows' verdict+reasoning replaced by the anno-ia-rev1 re-run under the revised IA codebook. rev1 error rows fall back to the base verdict.",
+  "base_csv": "label_results-claude-opus-4-7-anno-targeted-full.csv",
+  "base_meta_sha256_of_source": "1c83047259d1f20e62201a18d58468812c9735818393a24d151f96aca76a35b4",
+  "ia_source_csv": "label_results-claude-opus-4-7-anno-ia-rev1.csv",
+  "ia_prompt_sha256_served": "dd229a6be83479ce3ed15f7bc62cb14e0ddac7fd5d1da47172391692b3383176",
+  "ia_prompt_sha256_original": "d018b2668968ed11dfbee9bdeda4fa56dfd80982767e65763039ccdb98e31903",
+  "ia_rows_swapped": 488,
+  "ia_rows_kept_original_on_error": 4,
+  "run_complete": true
+}

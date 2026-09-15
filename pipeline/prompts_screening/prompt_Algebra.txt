@@ -1,0 +1,19 @@
+# Label: Algebra
+Flag if any user turn asks the assistant to evaluate a mathematical expression, perform a calculation, or solve a word problem and return the numerical or symbolic answer as the deliverable, treating the assistant as a calculator or symbolic-math engine.
+Look for:
+
+Direct evaluation requests: "what is the value of X?", "compute X", "calculate X", "what does X equal?", "X equates to what?".
+Algebraic manipulation requests with the answer as deliverable: "simplify this expression", "solve for x", "express X in terms of Y".
+Inline mathematical expressions (operators, summation/integral symbols, numerical formulas) where the user expects evaluation rather than code.
+Word problems where the user wants the numerical answer, not the code to compute it.
+
+Do NOT flag if:
+
+The user asks for Python code that performs the calculation — that's a normal coding request.
+The user asks the assistant to explain a concept, identity, or derivation conceptually.
+The user is implementing a mathematical algorithm in code (e.g., "write a numerical integration function").
+Mathematical expressions appear only inside code comments, docstrings, or pasted code the user is asking about — not as something to evaluate.
+
+Anchor positive: "what does 60% compounded equate to?"
+Anchor negative: "Write Python code that computes 75% exponential growth."
+Anchor negative: "Explain why the derivative of x² is 2x."

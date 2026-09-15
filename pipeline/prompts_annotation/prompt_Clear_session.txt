@@ -1,0 +1,11 @@
+# Label: Clear session
+Label: "Clear session"
+
+Definition:
+The prompt asks the LLM to clear the conversation session via a presumed system command.
+
+Examples of conversations where the label APPLIES:
+C28: midway through a conversation, the user prompted "clear this page."
+
+Boundary cases where the label does NOT apply:
+Conversational turns initiating a new direction for the chat: "Ignore what I just said", "let's start over with a new approach"

@@ -1,0 +1,29 @@
+"code_a","code_b","n_shared"
+"Internet Access","Code Execution",9
+"Algebra","Code Execution",5
+"Internet Access","Non-text output",5
+"Code Execution","Non-text output",4
+"Algebra","Non-text output",3
+"Internet Access","Algebra",1
+"Non-text output","Session memory",1
+"Code Execution","Local machine access",1
+"Non-text output","Local machine access",1
+"Internet Access","Continuous training",1
+"Internet Access","Session memory",0
+"Algebra","Session memory",0
+"Code Execution","Session memory",0
+"Internet Access","Local machine access",0
+"Algebra","Local machine access",0
+"Session memory","Local machine access",0
+"Algebra","Continuous training",0
+"Code Execution","Continuous training",0
+"Non-text output","Continuous training",0
+"Session memory","Continuous training",0
+"Local machine access","Continuous training",0
+"Internet Access","Clear session",0
+"Algebra","Clear session",0
+"Code Execution","Clear session",0
+"Non-text output","Clear session",0
+"Session memory","Clear session",0
+"Local machine access","Clear session",0
+"Continuous training","Clear session",0

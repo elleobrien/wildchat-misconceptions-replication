@@ -1,0 +1,12 @@
+# Label: Session memory
+Label: "Session memory"
+
+Definition:
+The prompt references information from a separate prior conversation, assuming the LLM has cross-session access.
+
+Examples of conversations where the label APPLIES:
+C4: "Okay thank you please from the previous programming problem you solved please redo it and round the answers in dollars and cents." [In a conversation where no previous problem has been discussed]
+
+Boundary cases where the label does NOT apply:
+Referencing prior conversations, but including relevant artifacts from those conversations as if the assistant cannot recall on its own. For example, "Remember what you wrote yesterday..." followed by a code block, or citing a previous answer while pasting that answer in full in the same prompt.
+References to artifacts never shared in the conversation WITHOUT an explicit cross-session anchor ("last time", "previous chat", "yesterday") — could be a user mistake or a forgotten paste; default to No Misconception. Flag only when an explicit cross-session anchor is present AND the user does not re-post the answer or context their prompt requires.

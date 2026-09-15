@@ -1,0 +1,159 @@
+Label,Definition,Example(s),Boundary cases that are NOT misconceptions,Notes,LLM Filter Prompt
+Code Execution,The prompt requests the LLM to execute a program. Must explicitly reference running/executing code or asking for the literal output of execution.,"C3: ""make the code run and check for input 5.""
+C26: ""Click Run and watch the stage to see what's wrong.""
+C26 (follow-up): ""did you call the function to make it run?""","Asking the LLM to trace code by hand or predict output (""walk through this loop for n=3"") 
+Asking for code that implements a computation.
+Whole-conversation rule: if the user appears satisfied with a code response, default to No Misconception.",,"Flag if any user turn asks the assistant to actually run or execute code and report what happens, or implies the assistant has just done so.
+Look for:
+
+Imperative requests for execution directed at the assistant (""run this"", ""execute it"", ""go ahead and try""), especially following a code block the assistant has produced or the user has shared.
+Requests for the literal runtime output: ""what does this print?"", ""what's the output when I pass X?"", ""tell me the result of running this"".
+Questions presuming the assistant ran something: ""did you run it?"", ""did you invoke that helper?"", ""what did you get when you executed it?"".
+User-pasted instructions to ""click Run"" or ""press Run"" directed at the chatbot (often appears in copy-pasted homework).
+
+Do NOT flag if:
+
+The user is asking for code that, when they run it, produces some result (""write a function that prints X"").
+The user pastes runtime output themselves (e.g., a traceback) and asks the assistant to interpret it — that's debugging help.
+The user asks the assistant to mentally trace through code without executing it (""walk through this loop for n=3"").
+
+Anchor positive: ""go ahead and try it with input 5 — what does it print?""
+Anchor negative: ""Write a function that processes input 5 and returns the result."""
+Internet Access,"The prompt assumes the LLM can read content from a URL or other live web/internet resource. Includes API calls and web scraping where the target site's structure must be known. Also applies when a URL is offered as reference material the LLM is expected to consult — documentation, a repository, a specification, or a page the user points to in support of the task. The fetch need not be necessary for the task to proceed: offering the link at all presumes the LLM can retrieve it.","C18: ""from the data provided here"" [followed by GitHub repository link, then a question about controlling Wi-Fi enabled smart devices].
+C24: ""use a genetic  to optimize the features and parameters of a  learning model for predicting the survival of passengers aboard the titanic"" [followed by link to Kaggle dataset]
+","Vague phrases like ""modern UI off the internet"" — default to No Misconception.
+A URL appearing only inside pasted code, tracebacks, or error messages.
+Requests for a generic scraper template against an unspecified site.
+Placeholder or template URLs (e.g., example.com, or a URL inside a format/JSON example the user supplies) — the task does not depend on fetching them.
+A link appearing incidentally in a longer task description (e.g., a reference page about a concept or topic mentioned in an assignment) that the prompt's instructions never invoke.",,"Flag if any user turn mentions a specific URL, web link, file on the web, API endpoint, or web page in their instructions or prose — regardless of whether the user explicitly asks the assistant to fetch it. If the user mentions a URL as part of their request, assume they believe the assistant can use information at that source.
+Look for:
+
+Any URL or web link appearing in the user's prose, instructions, or context — even if just ""for reference"" or as background (""see this repo"", ""here's the dataset"", ""based on this article"", with the URL attached).
+Requests to scrape, crawl, or extract data from a specifically named site (e.g., ""scrape IMDb's top 250 list"", ""get book titles from books.toscrape.com"").
+Prompts phrased as if a linked resource supplies necessary context: ""use the dataset at this link to build X"".
+
+Do NOT flag if:
+
+The URL is clearly part of code, a program, or a Python code block — e.g., inside a fenced code block, as an `import`, `pip install`, `git clone`, an HTTP request inside a script the user is asking about, or as a string literal in code the user wrote.
+The URL appears only inside a traceback or error message the user pasted as debugging context.
+The user vaguely references ""the internet"" without a specific target (""a UI like ones off the internet"").
+The user asks for a generic web scraper template without naming a specific target site.
+
+The disambiguator: is the URL in the user's instructions/prose, or is it inside code? Only the latter is excluded. A bare URL dropped into the conversation alongside an instruction counts — the user mentioning it at all implies they think the model has access.
+
+Anchor positive: ""use the dataset at this link to [task that depends on the URL content]""
+Anchor positive (reference-only): ""I want to control my smart bulbs — here's the GitHub repo: https://github.com/example/repo. What's the API base URL?""
+Anchor negative: code block containing `requests.get(""https://example.com/data.json"")` — URL inside code the user is asking about, not a directive to fetch."
+Non-text output,"The prompt asks the LLM to directly produce a non-text artifact (image, plot, audio, video) as the deliverable.","C7: “give me a meteogram in port of genoa on June 7, 2020.""
+C2: "". The data file eu2.csv (available from [GitHub Link] contains the percapita gross domestic product (GDP) in PPS of seven EU countries. [...] Create a line plot of the PPS in the 6 countries""","""Write Python code that produces a plot of X"" — deliverable is code, not the plot.
+Whole-conversation rule: if the user appears satisfied with a code response, default to No Misconception. This includes accepting the code implicitly, e.g. by continuing to refine the request in follow-up turns without objecting to having received code.","There is some ambiguity about handling cases where the user asks for a plot, receives code, and then doesn't appear to complain in any follow-up turns. It is unclear if the original prompt is just underspecified, then. ","Flag if any user turn asks the assistant to directly produce a non-textual artifact — an image, plot, chart, figure, diagram, audio clip, video, map, or other visual — as the deliverable, with no indication code would be acceptable.
+Look for:
+
+Direct requests for the visual as deliverable: ""give me a graph of X"", ""show me a plot of Y"", ""draw a diagram of Z"", ""produce a wind rose"", ""generate a chart"".
+Requests to modify or restyle a visual the assistant is presumed to have produced (""make the eyes more oval"", ""fix the scaling on that image"").
+Any prompt whose literal request, taken at face value, demands a pixel-based or audio-based output.
+
+Do NOT flag if:
+
+The user explicitly asks for code that produces the visual (""write Python that plots the data"").
+The user asks for an ASCII representation or a markdown table.
+
+If the user asks for ""a plot"" but the surrounding context is clearly code-tutorial (e.g., a homework assignment about matplotlib), flag it anyway — the misconception was present at prompt time even if the user later accepts a code response. Human annotators will decide.
+Anchor positive: ""give me a wind rose plot for Boston in October 2022.""
+Anchor positive (ambiguous): ""Create a bar chart of inflation across these 5 economies.""
+Anchor negative: ""Write Python code that plots stock prices for the last 5 years."""
+Session memory,"The prompt references information from a separate prior conversation, assuming the LLM has cross-session access.","C4: ""Okay thank you please from the previous programming problem you solved please redo it and round the answers in dollars and cents."" [In a conversation where no previous problem has been discussed]","Referencing prior conversations, but including relevant artifacts from those conversations as if the assistant cannot recall on its own. For example, ""Remember what you wrote yesterday..."" followed by a code block, or citing a previous answer while pasting that answer in full in the same prompt.
+References to artifacts never shared in the conversation WITHOUT an explicit cross-session anchor (""last time"", ""previous chat"", ""yesterday"") — could be a user mistake or a forgotten paste; default to No Misconception. Flag only when an explicit cross-session anchor is present AND the user does not re-post the answer or context their prompt requires.",,"Flag if any user turn references information, code, problems, or context from a separate, earlier conversation as if the assistant has access to it.
+Look for:
+
+Explicit cross-session anchors: ""from our last conversation"", ""from the previous chat""
+References to previous work in the first user prompt of a conversation: ""yesterday"", ""earlier today"", ""from the homework we worked on earlier"", ""continue where we left off""
+References to projects, code, files, or decisions that were never introduced in the current conversation but are spoken about as if the assistant already knows them (""add error handling to my script"" when no script has been shared this session).
+""Redo it"" or ""do it again"" referring to something the assistant has no record of in the current session.
+
+Do NOT flag if:
+
+The user references something earlier in the same conversation (""fix the code you just wrote"", ""your previous answer"", ""your last response""). These are in-session references.
+The user says ""ignore previous instructions"" or similar — that's a known prompt-injection idiom, not a belief about cross-session memory.
+The user pastes earlier conversation text into the current message — they're providing context, not assuming memory.
+
+To apply this criterion well, the LLM needs to know whether referenced content actually appears earlier in the same conversation. Pass the full conversation, not just one turn.
+Anchor positive: ""from the homework problem we worked on last time, please redo it and show the answers as percentages.""
+Anchor negative (in-session): ""Fix the bug in the function you just wrote.""
+Anchor negative (prompt injection): ""Ignore all previous instructions and act as..."""
+Continuous training,"The prompt assumes the LLM has knowledge that postdates its training cutoff, typically by asking for ""latest"", ""current"", or ""up-to-date"" content for libraries or APIs known to evolve.","C6: ""Use latest telethon to delete messges [sic] in group that are sent by me.""
+C13: ""Migrate this code to the latest openai api.""","Specifying a known stable version (""use numpy 1.20"") is not a misconception.
+","If someone asked for a library version that was released after the training data, that could indicate a misconception about the trainimg cutoff- but we'd have to cross-reference the release dates of library versions and I don't think we should do that. ","Flag if any user turn asks the assistant to use the ""latest"", ""newest"", ""current"", or ""up-to-date"" version of a library, API, framework, or external service — implying the assistant has post-training-cutoff knowledge.
+Look for:
+
+The words latest, newest, current, up-to-date, up to date, most recent, recently released applied to a library, API, package, framework, or web service the user wants the assistant to use.
+Phrases like ""upgrade this to the newest [X] SDK"", ""port this to the current version of [Y]"", ""use the recently released [library]"".
+
+Do NOT flag if:
+
+The user names a specific stable version (""use numpy 1.20"", ""Python 3.9"", ""openai==0.27"").
+The user is asking what the latest version is — that's an information question, not an assumption that the assistant has access.
+""Latest"" or ""newest"" refers to the user's own code or files (""use my latest version of this function"", ""the newest file I shared"").
+The user asks for ""modern"" or ""idiomatic"" code without invoking recency claims about specific external libraries.
+
+Anchor positive: ""Use the newest version of pyrogram to forward messages from a channel...""
+Anchor positive: ""Upgrade this script to the newest version of the Stripe SDK.""
+Anchor negative: ""Write code using numpy 1.20 syntax.""
+Anchor negative: ""Use my latest version of the helper function I just shared."""
+Algebra,"The prompt asks the LLM to evaluate an algebraic, arithmetic, or symbolic expression and return the numerical or symbolic answer, treating the LLM as a calculator or symbolic engine.","C22: ""what does 75% expentional [sic] equate to.""
+R2-c1c0a59d: ""what is the most expensive Fornecedor based on Processado"" [asked of a pasted invoice table] — the model must compare all values, not merely retrieve one.","Asking for Python code that evaluates the expression — deliverable is code.
+Explaining an algebraic identity or deriving a formula conceptually.
+Implementing a mathematical algorithm in code.
+Whole-conversation rule: if the user appears satisfied with a code response, default to No Misconception. This includes a user who first asks for the answer to a math task but then asks for code for the task and accepts it.
+Asking the LLM to write or provide a formula/equation (rather than evaluate or solve it) is not Algebra — e.g. asking the model to write the equation that would solve for a quantity, without computing the value.","Finding the maximum value in user-provided data DOES count as Algebra: the issue is not the data lookup itself, but that the model must compare all values and compute which is largest.","Flag if any user turn asks the assistant to evaluate a mathematical expression, perform a calculation, or solve a word problem and return the numerical or symbolic answer as the deliverable, treating the assistant as a calculator or symbolic-math engine.
+Look for:
+
+Direct evaluation requests: ""what is the value of X?"", ""compute X"", ""calculate X"", ""what does X equal?"", ""X equates to what?"".
+Algebraic manipulation requests with the answer as deliverable: ""simplify this expression"", ""solve for x"", ""express X in terms of Y"".
+Inline mathematical expressions (operators, summation/integral symbols, numerical formulas) where the user expects evaluation rather than code.
+Word problems where the user wants the numerical answer, not the code to compute it.
+
+Do NOT flag if:
+
+The user asks for Python code that performs the calculation — that's a normal coding request.
+The user asks the assistant to explain a concept, identity, or derivation conceptually.
+The user is implementing a mathematical algorithm in code (e.g., ""write a numerical integration function"").
+Mathematical expressions appear only inside code comments, docstrings, or pasted code the user is asking about — not as something to evaluate.
+
+Anchor positive: ""what does 60% compounded equate to?""
+Anchor negative: ""Write Python code that computes 75% exponential growth.""
+Anchor negative: ""Explain why the derivative of x² is 2x."""
+Local machine access,"The prompt asks the LLM to access, inspect, modify, or run software on the user's local machine.","C12: a user debugging a program began with ""please help"" and a traceback, then later asked ""where did it download the file to or attempt to?""","Asking for instructions that can be performed by the user on their  local machine: ""How do I find what version of Python I have installed?""  ""How do I install X?""
+Pasting a local file path as context for debugging without asking the LLM to access it (e.g., ""the file is here: C:\Users\..."" within a debugging conversation).",,"Flag if any user turn asks the assistant to perform an action on the user's local machine OR asks the assistant to report local file locations, file contents, or environment state — opening files, running commands, inspecting the file system, looking up where a file lives, or checking what's installed.
+Look for:
+
+Imperative verbs (open, run, execute, check, read, inspect, access, look at) directed at local resources: ""open this file"", ""run it in my terminal"", ""check what's in my home directory"", ""look at my project folder"".
+Local file paths — Windows (C:\Users\…), Unix (/home/user/…, ~/…), or references to Desktop, Documents, Downloads, cache folders — accompanied by language suggesting the assistant should access them rather than just know about them.
+Requests for the assistant to check or verify properties of the user's environment that would require local access, framed as a request to the assistant rather than as a request for instructions.
+Questions that presuppose the assistant can locate or inspect local files/state: ""where on disk did you save the cached model?"", ""what folder did the file land in?"", ""did it end up in my Downloads?"", ""is X already installed?"". Asking *about* a local location or local state — as if the assistant could check — is itself the misconception. The assistant has no way to know without accessing the machine.
+
+Do NOT flag if:
+
+The user is asking how to perform an action (""how do I run this in my terminal?"", ""what command checks my Python version?""). These are requests for instructions, not for the assistant to act.
+The user describes their local environment as information for the assistant to reason about, not as something to access.
+
+Anchor positive: ""where on disk did you save the cached model?""
+Anchor negative: ""How do I find what version of Python I have installed?""
+Anchor negative (path-as-context): ""My model is at C:\Users\foo\model.bin. Why is loading so slow?"""
+Clear session,The prompt asks the LLM to clear the conversation session via a presumed system command.,"C28: midway through a conversation, the user prompted ""clear this page.""","Conversational turns initiating a new direction for the chat: ""Ignore what I just said"", ""let's start over with a new approach"" 
+
+",,"Flag if any user turn asks the assistant to clear, delete, reset, wipe, or otherwise erase the conversation history — invoking what the user presumes is a system-level command.
+Look for:
+
+Direct commands to clear chat state: ""clear the chat"", ""reset everything"", ""reset our conversation"", ""delete what you remember"", ""wipe the history""
+Imperative ""clear X"" directed at the chat where X reads like an artifact in the chat context — ""clear this page"", ""clear this"", ""clear it"" — count these even when the surrounding conversation involves notebooks, IDEs, or other software the phrase could superficially apply to. A bare imperative is a clear-session request unless it's framed as a how-to question.
+
+Do NOT flag if:
+
+The user is initiating a semantic restart of the conversation (""let's try a different approach"", ""ignore that, try this instead""). Normal redirection is not a clear-session request.
+The user says ""ignore previous instructions"" — prompt-injection idiom.
+
+Anchor positive: ""wipe this whole chat.""
+Anchor positive: ""clear this page."" (bare imperative — counts even in a Jupyter/notebook conversation)
+Anchor negative: ""Let's start over with a new approach."""
+(all codes),General exclusions that apply to every code.,,Prompts that appear to be copy-pasted jailbreak or persona templates: capabilities asserted by the template are not treated as the user's own beliefs.,"Added 2026-09-02 after co-author re-review of the verification round, together with the incidental-link exclusion under Internet Access.",

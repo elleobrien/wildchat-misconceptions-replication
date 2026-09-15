@@ -1,0 +1,15 @@
+# secrets
+pipeline/keys.json
+
+# data (rebuilt via data/download_wildchat.py + data/filter_wildchat.py)
+data/*.parquet
+data/wildchat_1m_raw/
+
+# run outputs (the production result files the analysis reads are committed)
+pipeline/results/*
+!pipeline/results/label_results-*
+*.out
+ollama-*.log
+
+__pycache__/
+.DS_Store

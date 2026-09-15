@@ -1,0 +1,337 @@
+conversation_hash,cohort,label,opus,filter_flagged,anchor_intended,majority,Elle,Sebastian,Grischa
+ec9ec3cf14894e889ec851eab76a27df,anchor,Algebra,0,0,0,,,,
+ec9ec3cf14894e889ec851eab76a27df,anchor,Clear session,0,0,0,,,,
+ec9ec3cf14894e889ec851eab76a27df,anchor,Code Execution,1,0,1,,,,
+ec9ec3cf14894e889ec851eab76a27df,anchor,Continuous training,0,0,0,,,,
+ec9ec3cf14894e889ec851eab76a27df,anchor,Internet Access,0,0,0,,,,
+ec9ec3cf14894e889ec851eab76a27df,anchor,Local machine access,0,0,0,,,,
+ec9ec3cf14894e889ec851eab76a27df,anchor,Non-text output,0,0,0,,,,
+ec9ec3cf14894e889ec851eab76a27df,anchor,Session memory,0,0,0,,,,
+279527db70a671b914aa457cfa3485dc,anchor,Algebra,0,0,0,,,,
+279527db70a671b914aa457cfa3485dc,anchor,Clear session,0,0,0,,,,
+279527db70a671b914aa457cfa3485dc,anchor,Code Execution,1,0,1,,,,
+279527db70a671b914aa457cfa3485dc,anchor,Continuous training,0,0,0,,,,
+279527db70a671b914aa457cfa3485dc,anchor,Internet Access,0,0,0,,,,
+279527db70a671b914aa457cfa3485dc,anchor,Local machine access,1,0,0,,,,
+279527db70a671b914aa457cfa3485dc,anchor,Non-text output,0,0,0,,,,
+279527db70a671b914aa457cfa3485dc,anchor,Session memory,0,0,0,,,,
+df0f16f89a0dc36a4533cbffea72f89e,anchor,Algebra,0,0,0,,,,
+df0f16f89a0dc36a4533cbffea72f89e,anchor,Clear session,0,0,0,,,,
+df0f16f89a0dc36a4533cbffea72f89e,anchor,Code Execution,0,0,0,,,,
+df0f16f89a0dc36a4533cbffea72f89e,anchor,Continuous training,0,0,0,,,,
+df0f16f89a0dc36a4533cbffea72f89e,anchor,Internet Access,1,0,1,,,,
+df0f16f89a0dc36a4533cbffea72f89e,anchor,Local machine access,0,0,0,,,,
+df0f16f89a0dc36a4533cbffea72f89e,anchor,Non-text output,0,0,0,,,,
+df0f16f89a0dc36a4533cbffea72f89e,anchor,Session memory,0,0,0,,,,
+a5bec537d390956972d94d29ff96f417,anchor,Algebra,0,0,0,,,,
+a5bec537d390956972d94d29ff96f417,anchor,Clear session,0,0,0,,,,
+a5bec537d390956972d94d29ff96f417,anchor,Code Execution,0,0,0,,,,
+a5bec537d390956972d94d29ff96f417,anchor,Continuous training,0,0,0,,,,
+a5bec537d390956972d94d29ff96f417,anchor,Internet Access,1,0,1,,,,
+a5bec537d390956972d94d29ff96f417,anchor,Local machine access,0,0,0,,,,
+a5bec537d390956972d94d29ff96f417,anchor,Non-text output,0,0,0,,,,
+a5bec537d390956972d94d29ff96f417,anchor,Session memory,0,0,0,,,,
+41513ee525925b92a208d8954d0d3a39,anchor,Algebra,0,0,0,,,,
+41513ee525925b92a208d8954d0d3a39,anchor,Clear session,0,0,0,,,,
+41513ee525925b92a208d8954d0d3a39,anchor,Code Execution,0,0,0,,,,
+41513ee525925b92a208d8954d0d3a39,anchor,Continuous training,0,0,0,,,,
+41513ee525925b92a208d8954d0d3a39,anchor,Internet Access,0,0,0,,,,
+41513ee525925b92a208d8954d0d3a39,anchor,Local machine access,0,0,0,,,,
+41513ee525925b92a208d8954d0d3a39,anchor,Non-text output,1,0,1,,,,
+41513ee525925b92a208d8954d0d3a39,anchor,Session memory,0,0,0,,,,
+1c0520993fa2ea37fa307edb4f288080,anchor,Algebra,0,0,0,,,,
+1c0520993fa2ea37fa307edb4f288080,anchor,Clear session,0,0,0,,,,
+1c0520993fa2ea37fa307edb4f288080,anchor,Code Execution,0,0,0,,,,
+1c0520993fa2ea37fa307edb4f288080,anchor,Continuous training,0,0,0,,,,
+1c0520993fa2ea37fa307edb4f288080,anchor,Internet Access,0,0,0,,,,
+1c0520993fa2ea37fa307edb4f288080,anchor,Local machine access,0,0,0,,,,
+1c0520993fa2ea37fa307edb4f288080,anchor,Non-text output,0,0,1,,,,
+1c0520993fa2ea37fa307edb4f288080,anchor,Session memory,0,0,0,,,,
+2848cb483c2313e95938136ff8d2f137,anchor,Algebra,0,0,0,,,,
+2848cb483c2313e95938136ff8d2f137,anchor,Clear session,0,0,0,,,,
+2848cb483c2313e95938136ff8d2f137,anchor,Code Execution,0,0,0,,,,
+2848cb483c2313e95938136ff8d2f137,anchor,Continuous training,0,0,0,,,,
+2848cb483c2313e95938136ff8d2f137,anchor,Internet Access,0,0,0,,,,
+2848cb483c2313e95938136ff8d2f137,anchor,Local machine access,0,0,0,,,,
+2848cb483c2313e95938136ff8d2f137,anchor,Non-text output,0,0,0,,,,
+2848cb483c2313e95938136ff8d2f137,anchor,Session memory,0,0,1,,,,
+673d045f441ad03422b93f9f5e1dcd68,anchor,Algebra,0,0,0,,,,
+673d045f441ad03422b93f9f5e1dcd68,anchor,Clear session,0,0,0,,,,
+673d045f441ad03422b93f9f5e1dcd68,anchor,Code Execution,0,0,0,,,,
+673d045f441ad03422b93f9f5e1dcd68,anchor,Continuous training,1,0,1,,,,
+673d045f441ad03422b93f9f5e1dcd68,anchor,Internet Access,0,0,0,,,,
+673d045f441ad03422b93f9f5e1dcd68,anchor,Local machine access,0,0,0,,,,
+673d045f441ad03422b93f9f5e1dcd68,anchor,Non-text output,0,0,0,,,,
+673d045f441ad03422b93f9f5e1dcd68,anchor,Session memory,0,0,0,,,,
+3d89d0c018902a1e51ebf20fb63ec440,anchor,Algebra,0,0,0,,,,
+3d89d0c018902a1e51ebf20fb63ec440,anchor,Clear session,0,0,0,,,,
+3d89d0c018902a1e51ebf20fb63ec440,anchor,Code Execution,0,0,0,,,,
+3d89d0c018902a1e51ebf20fb63ec440,anchor,Continuous training,1,0,1,,,,
+3d89d0c018902a1e51ebf20fb63ec440,anchor,Internet Access,0,0,0,,,,
+3d89d0c018902a1e51ebf20fb63ec440,anchor,Local machine access,0,0,0,,,,
+3d89d0c018902a1e51ebf20fb63ec440,anchor,Non-text output,0,0,0,,,,
+3d89d0c018902a1e51ebf20fb63ec440,anchor,Session memory,0,0,0,,,,
+bbbae0f9a20cae245bbbc7f99954daf4,anchor,Algebra,1,0,1,,,,
+bbbae0f9a20cae245bbbc7f99954daf4,anchor,Clear session,0,0,0,,,,
+bbbae0f9a20cae245bbbc7f99954daf4,anchor,Code Execution,0,0,0,,,,
+bbbae0f9a20cae245bbbc7f99954daf4,anchor,Continuous training,0,0,0,,,,
+bbbae0f9a20cae245bbbc7f99954daf4,anchor,Internet Access,0,0,0,,,,
+bbbae0f9a20cae245bbbc7f99954daf4,anchor,Local machine access,0,0,0,,,,
+bbbae0f9a20cae245bbbc7f99954daf4,anchor,Non-text output,0,0,0,,,,
+bbbae0f9a20cae245bbbc7f99954daf4,anchor,Session memory,0,0,0,,,,
+61041b2ac6e5b38bc0e76dc045d388c8,anchor,Algebra,0,0,0,,,,
+61041b2ac6e5b38bc0e76dc045d388c8,anchor,Clear session,0,0,0,,,,
+61041b2ac6e5b38bc0e76dc045d388c8,anchor,Code Execution,0,0,0,,,,
+61041b2ac6e5b38bc0e76dc045d388c8,anchor,Continuous training,0,0,0,,,,
+61041b2ac6e5b38bc0e76dc045d388c8,anchor,Internet Access,0,0,0,,,,
+61041b2ac6e5b38bc0e76dc045d388c8,anchor,Local machine access,1,0,1,,,,
+61041b2ac6e5b38bc0e76dc045d388c8,anchor,Non-text output,0,0,0,,,,
+61041b2ac6e5b38bc0e76dc045d388c8,anchor,Session memory,0,0,0,,,,
+f0aaa97938fdc477cfd6939bb3d9d5bc,anchor,Algebra,0,0,0,,,,
+f0aaa97938fdc477cfd6939bb3d9d5bc,anchor,Clear session,1,0,1,,,,
+f0aaa97938fdc477cfd6939bb3d9d5bc,anchor,Code Execution,0,0,0,,,,
+f0aaa97938fdc477cfd6939bb3d9d5bc,anchor,Continuous training,0,0,0,,,,
+f0aaa97938fdc477cfd6939bb3d9d5bc,anchor,Internet Access,0,0,0,,,,
+f0aaa97938fdc477cfd6939bb3d9d5bc,anchor,Local machine access,0,0,0,,,,
+f0aaa97938fdc477cfd6939bb3d9d5bc,anchor,Non-text output,0,0,0,,,,
+f0aaa97938fdc477cfd6939bb3d9d5bc,anchor,Session memory,0,0,0,,,,
+4c3c7b034a34d98009d921675e63bd40,sample,Algebra,0,0,0,0,0,0,1
+4c3c7b034a34d98009d921675e63bd40,sample,Clear session,0,0,0,0,0,0,0
+4c3c7b034a34d98009d921675e63bd40,sample,Code Execution,0,1,0,1,1,1,1
+4c3c7b034a34d98009d921675e63bd40,sample,Continuous training,0,0,0,0,0,0,0
+4c3c7b034a34d98009d921675e63bd40,sample,Internet Access,0,0,0,0,0,0,0
+4c3c7b034a34d98009d921675e63bd40,sample,Local machine access,0,0,0,0,0,0,0
+4c3c7b034a34d98009d921675e63bd40,sample,Non-text output,0,0,0,0,0,0,0
+4c3c7b034a34d98009d921675e63bd40,sample,Session memory,0,0,0,0,0,0,0
+afd173f4de84ee096327d3a972177cd1,sample,Algebra,0,1,0,0,0,0,1
+afd173f4de84ee096327d3a972177cd1,sample,Clear session,0,0,0,0,0,0,0
+afd173f4de84ee096327d3a972177cd1,sample,Code Execution,0,0,0,0,0,0,0
+afd173f4de84ee096327d3a972177cd1,sample,Continuous training,0,0,0,0,0,0,0
+afd173f4de84ee096327d3a972177cd1,sample,Internet Access,0,0,0,0,0,0,0
+afd173f4de84ee096327d3a972177cd1,sample,Local machine access,0,0,0,0,0,0,0
+afd173f4de84ee096327d3a972177cd1,sample,Non-text output,0,0,0,0,0,0,0
+afd173f4de84ee096327d3a972177cd1,sample,Session memory,0,0,0,0,0,0,0
+f17893e5b8e5ba7c723f599e1156ece0,sample,Algebra,0,0,0,0,0,0,0
+f17893e5b8e5ba7c723f599e1156ece0,sample,Clear session,0,0,0,0,0,0,0
+f17893e5b8e5ba7c723f599e1156ece0,sample,Code Execution,0,0,0,0,0,0,0
+f17893e5b8e5ba7c723f599e1156ece0,sample,Continuous training,0,0,0,0,0,0,0
+f17893e5b8e5ba7c723f599e1156ece0,sample,Internet Access,0,1,0,0,0,0,0
+f17893e5b8e5ba7c723f599e1156ece0,sample,Local machine access,0,0,0,0,0,0,0
+f17893e5b8e5ba7c723f599e1156ece0,sample,Non-text output,0,0,0,0,0,0,0
+f17893e5b8e5ba7c723f599e1156ece0,sample,Session memory,0,0,0,0,0,0,0
+f8c1fe88cb620a431aee6ac1e31770e8,sample,Algebra,0,0,0,0,0,0,0
+f8c1fe88cb620a431aee6ac1e31770e8,sample,Clear session,0,0,0,0,0,0,0
+f8c1fe88cb620a431aee6ac1e31770e8,sample,Code Execution,0,0,0,0,0,0,0
+f8c1fe88cb620a431aee6ac1e31770e8,sample,Continuous training,0,0,0,0,0,0,0
+f8c1fe88cb620a431aee6ac1e31770e8,sample,Internet Access,0,0,0,0,0,0,0
+f8c1fe88cb620a431aee6ac1e31770e8,sample,Local machine access,0,0,0,0,0,0,0
+f8c1fe88cb620a431aee6ac1e31770e8,sample,Non-text output,0,1,0,0,0,0,0
+f8c1fe88cb620a431aee6ac1e31770e8,sample,Session memory,0,0,0,0,0,0,0
+02f363e64043e012a476eb333f3557ef,sample,Algebra,0,0,0,0,0,0,0
+02f363e64043e012a476eb333f3557ef,sample,Clear session,0,0,0,0,0,0,0
+02f363e64043e012a476eb333f3557ef,sample,Code Execution,0,0,0,0,0,0,0
+02f363e64043e012a476eb333f3557ef,sample,Continuous training,0,0,0,0,0,0,0
+02f363e64043e012a476eb333f3557ef,sample,Internet Access,0,0,0,0,0,0,0
+02f363e64043e012a476eb333f3557ef,sample,Local machine access,0,0,0,0,0,0,0
+02f363e64043e012a476eb333f3557ef,sample,Non-text output,0,1,0,1,0,1,1
+02f363e64043e012a476eb333f3557ef,sample,Session memory,0,1,0,0,0,1,0
+12e8be0f2b5385bcea4d2d9ef222c4f3,sample,Algebra,0,0,0,0,0,0,0
+12e8be0f2b5385bcea4d2d9ef222c4f3,sample,Clear session,0,0,0,0,0,0,0
+12e8be0f2b5385bcea4d2d9ef222c4f3,sample,Code Execution,0,0,0,0,0,1,0
+12e8be0f2b5385bcea4d2d9ef222c4f3,sample,Continuous training,0,0,0,0,0,0,0
+12e8be0f2b5385bcea4d2d9ef222c4f3,sample,Internet Access,0,1,0,1,0,0,0
+12e8be0f2b5385bcea4d2d9ef222c4f3,sample,Local machine access,0,0,0,0,0,0,0
+12e8be0f2b5385bcea4d2d9ef222c4f3,sample,Non-text output,0,0,0,0,0,0,0
+12e8be0f2b5385bcea4d2d9ef222c4f3,sample,Session memory,0,0,0,0,0,0,0
+153b9c3a921042250ecf06cbda7ef135,sample,Algebra,0,0,0,0,0,0,0
+153b9c3a921042250ecf06cbda7ef135,sample,Clear session,0,0,0,0,0,0,0
+153b9c3a921042250ecf06cbda7ef135,sample,Code Execution,0,0,0,0,0,0,0
+153b9c3a921042250ecf06cbda7ef135,sample,Continuous training,0,0,0,0,0,0,0
+153b9c3a921042250ecf06cbda7ef135,sample,Internet Access,0,0,0,0,0,0,0
+153b9c3a921042250ecf06cbda7ef135,sample,Local machine access,0,0,0,0,0,1,0
+153b9c3a921042250ecf06cbda7ef135,sample,Non-text output,0,1,0,0,0,1,0
+153b9c3a921042250ecf06cbda7ef135,sample,Session memory,0,0,0,0,0,0,0
+1e21e4bcb72485c43a88ab2a3b50f2c3,sample,Algebra,0,0,0,0,0,0,0
+1e21e4bcb72485c43a88ab2a3b50f2c3,sample,Clear session,0,0,0,0,0,0,0
+1e21e4bcb72485c43a88ab2a3b50f2c3,sample,Code Execution,0,0,0,0,0,0,0
+1e21e4bcb72485c43a88ab2a3b50f2c3,sample,Continuous training,0,0,0,0,0,0,0
+1e21e4bcb72485c43a88ab2a3b50f2c3,sample,Internet Access,0,0,0,0,0,0,0
+1e21e4bcb72485c43a88ab2a3b50f2c3,sample,Local machine access,0,1,0,0,0,0,1
+1e21e4bcb72485c43a88ab2a3b50f2c3,sample,Non-text output,0,0,0,0,0,0,0
+1e21e4bcb72485c43a88ab2a3b50f2c3,sample,Session memory,0,0,0,0,0,0,0
+2bec2647f8f0c91397687a07a3732fb0,sample,Algebra,0,0,0,0,0,0,0
+2bec2647f8f0c91397687a07a3732fb0,sample,Clear session,1,1,0,1,1,1,1
+2bec2647f8f0c91397687a07a3732fb0,sample,Code Execution,0,0,0,0,0,0,0
+2bec2647f8f0c91397687a07a3732fb0,sample,Continuous training,0,0,0,0,0,0,0
+2bec2647f8f0c91397687a07a3732fb0,sample,Internet Access,0,0,0,0,0,0,0
+2bec2647f8f0c91397687a07a3732fb0,sample,Local machine access,0,0,0,0,0,0,0
+2bec2647f8f0c91397687a07a3732fb0,sample,Non-text output,0,0,0,0,0,0,0
+2bec2647f8f0c91397687a07a3732fb0,sample,Session memory,0,0,0,0,0,0,0
+4abcdc2ec5861d0ffbb42409c2528c58,sample,Algebra,0,1,0,1,1,1,0
+4abcdc2ec5861d0ffbb42409c2528c58,sample,Clear session,0,0,0,0,0,0,0
+4abcdc2ec5861d0ffbb42409c2528c58,sample,Code Execution,0,0,0,0,0,0,0
+4abcdc2ec5861d0ffbb42409c2528c58,sample,Continuous training,0,0,0,0,0,0,0
+4abcdc2ec5861d0ffbb42409c2528c58,sample,Internet Access,0,0,0,0,0,0,0
+4abcdc2ec5861d0ffbb42409c2528c58,sample,Local machine access,0,0,0,0,0,0,0
+4abcdc2ec5861d0ffbb42409c2528c58,sample,Non-text output,0,0,0,0,0,0,0
+4abcdc2ec5861d0ffbb42409c2528c58,sample,Session memory,0,0,0,0,0,0,0
+52986108142b86ad1533c26e9a58f4b9,sample,Algebra,0,0,0,0,0,0,0
+52986108142b86ad1533c26e9a58f4b9,sample,Clear session,0,1,0,1,1,1,1
+52986108142b86ad1533c26e9a58f4b9,sample,Code Execution,0,0,0,0,0,0,0
+52986108142b86ad1533c26e9a58f4b9,sample,Continuous training,0,0,0,0,0,0,0
+52986108142b86ad1533c26e9a58f4b9,sample,Internet Access,0,0,0,0,0,0,0
+52986108142b86ad1533c26e9a58f4b9,sample,Local machine access,0,0,0,0,0,0,0
+52986108142b86ad1533c26e9a58f4b9,sample,Non-text output,0,0,0,0,0,0,0
+52986108142b86ad1533c26e9a58f4b9,sample,Session memory,0,0,0,0,0,0,0
+56a5351e49be0dab8fc7a3daf9ffc8ae,sample,Algebra,0,0,0,0,0,0,0
+56a5351e49be0dab8fc7a3daf9ffc8ae,sample,Clear session,0,0,0,0,0,0,0
+56a5351e49be0dab8fc7a3daf9ffc8ae,sample,Code Execution,1,1,0,1,0,1,1
+56a5351e49be0dab8fc7a3daf9ffc8ae,sample,Continuous training,0,0,0,0,0,0,0
+56a5351e49be0dab8fc7a3daf9ffc8ae,sample,Internet Access,0,0,0,0,0,0,0
+56a5351e49be0dab8fc7a3daf9ffc8ae,sample,Local machine access,0,0,0,0,0,0,0
+56a5351e49be0dab8fc7a3daf9ffc8ae,sample,Non-text output,0,0,0,0,0,0,0
+56a5351e49be0dab8fc7a3daf9ffc8ae,sample,Session memory,0,0,0,0,0,0,0
+5c617b26f053e7780769e8049d4a08ba,sample,Algebra,0,0,0,0,0,0,0
+5c617b26f053e7780769e8049d4a08ba,sample,Clear session,0,0,0,0,0,0,0
+5c617b26f053e7780769e8049d4a08ba,sample,Code Execution,0,0,0,0,0,0,0
+5c617b26f053e7780769e8049d4a08ba,sample,Continuous training,0,0,0,0,0,0,0
+5c617b26f053e7780769e8049d4a08ba,sample,Internet Access,0,0,0,0,0,0,0
+5c617b26f053e7780769e8049d4a08ba,sample,Local machine access,0,1,0,0,0,0,1
+5c617b26f053e7780769e8049d4a08ba,sample,Non-text output,0,0,0,0,0,0,0
+5c617b26f053e7780769e8049d4a08ba,sample,Session memory,0,0,0,0,0,0,0
+5d578f69c0bbd5edd440f1ee2f0c728d,sample,Algebra,0,0,0,0,0,0,0
+5d578f69c0bbd5edd440f1ee2f0c728d,sample,Clear session,0,0,0,0,0,0,0
+5d578f69c0bbd5edd440f1ee2f0c728d,sample,Code Execution,0,0,0,0,0,0,0
+5d578f69c0bbd5edd440f1ee2f0c728d,sample,Continuous training,0,0,0,0,0,0,0
+5d578f69c0bbd5edd440f1ee2f0c728d,sample,Internet Access,0,0,0,0,0,0,0
+5d578f69c0bbd5edd440f1ee2f0c728d,sample,Local machine access,0,0,0,0,0,0,0
+5d578f69c0bbd5edd440f1ee2f0c728d,sample,Non-text output,0,1,0,1,0,1,1
+5d578f69c0bbd5edd440f1ee2f0c728d,sample,Session memory,0,0,0,0,0,0,0
+7dda93ae7bdda0e7ab4fdf36cb709387,sample,Algebra,0,1,0,0,0,0,0
+7dda93ae7bdda0e7ab4fdf36cb709387,sample,Clear session,0,0,0,0,0,0,0
+7dda93ae7bdda0e7ab4fdf36cb709387,sample,Code Execution,0,0,0,0,0,0,0
+7dda93ae7bdda0e7ab4fdf36cb709387,sample,Continuous training,0,0,0,0,0,0,0
+7dda93ae7bdda0e7ab4fdf36cb709387,sample,Internet Access,0,0,0,0,0,0,0
+7dda93ae7bdda0e7ab4fdf36cb709387,sample,Local machine access,0,0,0,0,0,0,0
+7dda93ae7bdda0e7ab4fdf36cb709387,sample,Non-text output,0,0,0,0,0,0,0
+7dda93ae7bdda0e7ab4fdf36cb709387,sample,Session memory,0,0,0,0,0,0,0
+91af47399fc5519f5eb8d330b9d0b2ff,sample,Algebra,0,0,0,0,0,0,0
+91af47399fc5519f5eb8d330b9d0b2ff,sample,Clear session,0,0,0,0,0,0,0
+91af47399fc5519f5eb8d330b9d0b2ff,sample,Code Execution,0,0,0,0,0,0,0
+91af47399fc5519f5eb8d330b9d0b2ff,sample,Continuous training,0,1,0,1,0,1,1
+91af47399fc5519f5eb8d330b9d0b2ff,sample,Internet Access,0,0,0,0,0,0,0
+91af47399fc5519f5eb8d330b9d0b2ff,sample,Local machine access,0,0,0,0,0,0,0
+91af47399fc5519f5eb8d330b9d0b2ff,sample,Non-text output,0,0,0,0,0,0,0
+91af47399fc5519f5eb8d330b9d0b2ff,sample,Session memory,0,0,0,0,0,0,0
+b33390402a18cf328b2cc902539a1812,sample,Algebra,0,0,0,0,0,0,0
+b33390402a18cf328b2cc902539a1812,sample,Clear session,0,0,0,0,0,0,0
+b33390402a18cf328b2cc902539a1812,sample,Code Execution,0,0,0,1,1,1,1
+b33390402a18cf328b2cc902539a1812,sample,Continuous training,0,0,0,0,0,0,0
+b33390402a18cf328b2cc902539a1812,sample,Internet Access,1,1,0,1,1,1,1
+b33390402a18cf328b2cc902539a1812,sample,Local machine access,0,0,0,0,0,0,0
+b33390402a18cf328b2cc902539a1812,sample,Non-text output,0,0,0,0,0,0,0
+b33390402a18cf328b2cc902539a1812,sample,Session memory,0,0,0,0,0,0,0
+b538d5b784921d91fe4ce68ddf966d71,sample,Algebra,0,0,0,0,0,0,0
+b538d5b784921d91fe4ce68ddf966d71,sample,Clear session,0,0,0,0,0,0,0
+b538d5b784921d91fe4ce68ddf966d71,sample,Code Execution,0,0,0,0,0,0,0
+b538d5b784921d91fe4ce68ddf966d71,sample,Continuous training,0,0,0,0,0,0,0
+b538d5b784921d91fe4ce68ddf966d71,sample,Internet Access,1,1,0,1,1,1,1
+b538d5b784921d91fe4ce68ddf966d71,sample,Local machine access,0,0,0,0,0,0,0
+b538d5b784921d91fe4ce68ddf966d71,sample,Non-text output,0,0,0,0,0,0,0
+b538d5b784921d91fe4ce68ddf966d71,sample,Session memory,0,0,0,0,0,0,0
+ba44d2e0c47c26a70e5a557934189567,sample,Algebra,0,0,0,0,0,0,0
+ba44d2e0c47c26a70e5a557934189567,sample,Clear session,0,0,0,0,0,0,0
+ba44d2e0c47c26a70e5a557934189567,sample,Code Execution,0,0,0,0,0,0,0
+ba44d2e0c47c26a70e5a557934189567,sample,Continuous training,0,0,0,0,0,0,0
+ba44d2e0c47c26a70e5a557934189567,sample,Internet Access,0,1,0,1,1,1,1
+ba44d2e0c47c26a70e5a557934189567,sample,Local machine access,0,0,0,0,0,0,0
+ba44d2e0c47c26a70e5a557934189567,sample,Non-text output,0,0,0,0,0,0,0
+ba44d2e0c47c26a70e5a557934189567,sample,Session memory,0,0,0,0,0,0,0
+bd4e5e60dc5c721c020cb7cca51fe142,sample,Algebra,0,0,0,0,0,0,0
+bd4e5e60dc5c721c020cb7cca51fe142,sample,Clear session,0,0,0,0,0,0,0
+bd4e5e60dc5c721c020cb7cca51fe142,sample,Code Execution,1,1,0,1,1,1,1
+bd4e5e60dc5c721c020cb7cca51fe142,sample,Continuous training,0,0,0,0,0,0,0
+bd4e5e60dc5c721c020cb7cca51fe142,sample,Internet Access,0,0,0,0,0,0,0
+bd4e5e60dc5c721c020cb7cca51fe142,sample,Local machine access,0,0,0,0,0,0,0
+bd4e5e60dc5c721c020cb7cca51fe142,sample,Non-text output,0,0,0,0,0,0,0
+bd4e5e60dc5c721c020cb7cca51fe142,sample,Session memory,0,0,0,0,0,0,0
+c1c0a59d0196cd69cd9dd047c7f5f38f,sample,Algebra,1,1,0,1,0,1,1
+c1c0a59d0196cd69cd9dd047c7f5f38f,sample,Clear session,0,0,0,0,0,0,0
+c1c0a59d0196cd69cd9dd047c7f5f38f,sample,Code Execution,0,0,0,0,0,1,0
+c1c0a59d0196cd69cd9dd047c7f5f38f,sample,Continuous training,0,0,0,0,0,0,0
+c1c0a59d0196cd69cd9dd047c7f5f38f,sample,Internet Access,0,0,0,0,0,0,0
+c1c0a59d0196cd69cd9dd047c7f5f38f,sample,Local machine access,0,0,0,0,0,0,0
+c1c0a59d0196cd69cd9dd047c7f5f38f,sample,Non-text output,0,0,0,0,0,0,0
+c1c0a59d0196cd69cd9dd047c7f5f38f,sample,Session memory,0,0,0,0,0,0,0
+d185a962ef8265562915e14b7579553e,sample,Algebra,0,0,0,0,0,0,0
+d185a962ef8265562915e14b7579553e,sample,Clear session,0,0,0,0,0,0,0
+d185a962ef8265562915e14b7579553e,sample,Code Execution,0,1,0,0,0,0,1
+d185a962ef8265562915e14b7579553e,sample,Continuous training,0,0,0,0,0,0,0
+d185a962ef8265562915e14b7579553e,sample,Internet Access,0,0,0,0,0,0,0
+d185a962ef8265562915e14b7579553e,sample,Local machine access,0,0,0,0,0,0,0
+d185a962ef8265562915e14b7579553e,sample,Non-text output,0,0,0,0,0,0,0
+d185a962ef8265562915e14b7579553e,sample,Session memory,0,0,0,0,0,0,0
+d9e75e009ddead10cfcc697dabdf730c,sample,Algebra,0,0,0,0,0,0,0
+d9e75e009ddead10cfcc697dabdf730c,sample,Clear session,0,0,0,0,0,0,0
+d9e75e009ddead10cfcc697dabdf730c,sample,Code Execution,0,0,0,0,0,0,0
+d9e75e009ddead10cfcc697dabdf730c,sample,Continuous training,0,0,0,0,0,0,0
+d9e75e009ddead10cfcc697dabdf730c,sample,Internet Access,0,0,0,0,0,0,0
+d9e75e009ddead10cfcc697dabdf730c,sample,Local machine access,0,0,0,0,0,0,0
+d9e75e009ddead10cfcc697dabdf730c,sample,Non-text output,0,0,0,0,0,0,0
+d9e75e009ddead10cfcc697dabdf730c,sample,Session memory,0,1,0,0,0,1,0
+da4205454a0348d28dbffe39544f95d4,sample,Algebra,0,0,0,0,0,0,0
+da4205454a0348d28dbffe39544f95d4,sample,Clear session,0,0,0,0,0,0,0
+da4205454a0348d28dbffe39544f95d4,sample,Code Execution,0,0,0,0,0,0,0
+da4205454a0348d28dbffe39544f95d4,sample,Continuous training,0,0,0,0,0,0,0
+da4205454a0348d28dbffe39544f95d4,sample,Internet Access,0,0,0,0,0,0,0
+da4205454a0348d28dbffe39544f95d4,sample,Local machine access,0,0,0,0,0,0,0
+da4205454a0348d28dbffe39544f95d4,sample,Non-text output,0,0,0,0,0,0,0
+da4205454a0348d28dbffe39544f95d4,sample,Session memory,0,1,0,0,0,0,0
+dbf508151722875698dd8016d050937d,sample,Algebra,1,1,0,1,1,1,1
+dbf508151722875698dd8016d050937d,sample,Clear session,0,0,0,0,0,0,0
+dbf508151722875698dd8016d050937d,sample,Code Execution,0,0,0,0,0,0,0
+dbf508151722875698dd8016d050937d,sample,Continuous training,0,0,0,0,0,0,0
+dbf508151722875698dd8016d050937d,sample,Internet Access,0,0,0,0,0,0,0
+dbf508151722875698dd8016d050937d,sample,Local machine access,0,0,0,0,0,0,0
+dbf508151722875698dd8016d050937d,sample,Non-text output,0,0,0,0,0,0,0
+dbf508151722875698dd8016d050937d,sample,Session memory,0,0,0,0,0,0,0
+dd3274e94dda27646c019fa548455081,sample,Algebra,0,0,0,0,0,0,0
+dd3274e94dda27646c019fa548455081,sample,Clear session,0,0,0,0,0,0,0
+dd3274e94dda27646c019fa548455081,sample,Code Execution,0,0,0,0,0,0,0
+dd3274e94dda27646c019fa548455081,sample,Continuous training,1,1,0,0,0,1,0
+dd3274e94dda27646c019fa548455081,sample,Internet Access,0,0,0,0,0,0,0
+dd3274e94dda27646c019fa548455081,sample,Local machine access,0,0,0,0,0,0,0
+dd3274e94dda27646c019fa548455081,sample,Non-text output,0,0,0,0,0,0,0
+dd3274e94dda27646c019fa548455081,sample,Session memory,0,0,0,0,0,0,0
+e6ce8c92e6c84e92ce13ef0839556246,sample,Algebra,0,0,0,0,0,0,0
+e6ce8c92e6c84e92ce13ef0839556246,sample,Clear session,0,0,0,0,0,0,0
+e6ce8c92e6c84e92ce13ef0839556246,sample,Code Execution,1,1,0,1,1,1,1
+e6ce8c92e6c84e92ce13ef0839556246,sample,Continuous training,0,0,0,0,0,0,0
+e6ce8c92e6c84e92ce13ef0839556246,sample,Internet Access,0,0,0,0,0,0,0
+e6ce8c92e6c84e92ce13ef0839556246,sample,Local machine access,1,1,0,1,1,1,1
+e6ce8c92e6c84e92ce13ef0839556246,sample,Non-text output,0,0,0,0,0,0,0
+e6ce8c92e6c84e92ce13ef0839556246,sample,Session memory,0,0,0,0,0,0,0
+f0ea11bfac4f8da1b9df4ad04fdd8bb5,sample,Algebra,0,0,0,0,0,0,0
+f0ea11bfac4f8da1b9df4ad04fdd8bb5,sample,Clear session,0,0,0,0,0,0,0
+f0ea11bfac4f8da1b9df4ad04fdd8bb5,sample,Code Execution,0,1,0,1,1,1,1
+f0ea11bfac4f8da1b9df4ad04fdd8bb5,sample,Continuous training,0,0,0,0,0,0,0
+f0ea11bfac4f8da1b9df4ad04fdd8bb5,sample,Internet Access,1,1,0,1,1,1,1
+f0ea11bfac4f8da1b9df4ad04fdd8bb5,sample,Local machine access,0,1,0,0,0,0,1
+f0ea11bfac4f8da1b9df4ad04fdd8bb5,sample,Non-text output,1,1,0,1,1,1,1
+f0ea11bfac4f8da1b9df4ad04fdd8bb5,sample,Session memory,0,0,0,0,0,0,0
+f1c386e640c28e2fa58809b9fdb20ca9,sample,Algebra,0,0,0,0,0,0,0
+f1c386e640c28e2fa58809b9fdb20ca9,sample,Clear session,0,0,0,0,0,0,0
+f1c386e640c28e2fa58809b9fdb20ca9,sample,Code Execution,0,0,0,0,0,0,0
+f1c386e640c28e2fa58809b9fdb20ca9,sample,Continuous training,0,0,0,0,0,0,0
+f1c386e640c28e2fa58809b9fdb20ca9,sample,Internet Access,0,0,0,0,0,0,0
+f1c386e640c28e2fa58809b9fdb20ca9,sample,Local machine access,0,0,0,0,0,0,0
+f1c386e640c28e2fa58809b9fdb20ca9,sample,Non-text output,0,0,0,0,0,0,0
+f1c386e640c28e2fa58809b9fdb20ca9,sample,Session memory,0,1,0,1,1,1,1
+f1f229a4793411d7cbab34c48055d225,sample,Algebra,0,0,0,0,0,0,0
+f1f229a4793411d7cbab34c48055d225,sample,Clear session,0,0,0,0,0,0,0
+f1f229a4793411d7cbab34c48055d225,sample,Code Execution,0,0,0,0,0,0,0
+f1f229a4793411d7cbab34c48055d225,sample,Continuous training,0,0,0,0,0,0,0
+f1f229a4793411d7cbab34c48055d225,sample,Internet Access,0,0,0,0,0,0,0
+f1f229a4793411d7cbab34c48055d225,sample,Local machine access,0,0,0,0,0,1,0
+f1f229a4793411d7cbab34c48055d225,sample,Non-text output,1,1,0,1,1,1,1
+f1f229a4793411d7cbab34c48055d225,sample,Session memory,0,0,0,0,0,0,0

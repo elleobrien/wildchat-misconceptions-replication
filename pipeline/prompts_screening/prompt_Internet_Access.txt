@@ -1,0 +1,20 @@
+# Label: Internet Access
+Flag if any user turn mentions a specific URL, web link, file on the web, API endpoint, or web page in their instructions or prose — regardless of whether the user explicitly asks the assistant to fetch it. If the user mentions a URL as part of their request, assume they believe the assistant can use information at that source.
+Look for:
+
+Any URL or web link appearing in the user's prose, instructions, or context — even if just "for reference" or as background ("see this repo", "here's the dataset", "based on this article", with the URL attached).
+Requests to scrape, crawl, or extract data from a specifically named site (e.g., "scrape IMDb's top 250 list", "get book titles from books.toscrape.com").
+Prompts phrased as if a linked resource supplies necessary context: "use the dataset at this link to build X".
+
+Do NOT flag if:
+
+The URL is clearly part of code, a program, or a Python code block — e.g., inside a fenced code block, as an `import`, `pip install`, `git clone`, an HTTP request inside a script the user is asking about, or as a string literal in code the user wrote.
+The URL appears only inside a traceback or error message the user pasted as debugging context.
+The user vaguely references "the internet" without a specific target ("a UI like ones off the internet").
+The user asks for a generic web scraper template without naming a specific target site.
+
+The disambiguator: is the URL in the user's instructions/prose, or is it inside code? Only the latter is excluded. A bare URL dropped into the conversation alongside an instruction counts — the user mentioning it at all implies they think the model has access.
+
+Anchor positive: "use the dataset at this link to [task that depends on the URL content]"
+Anchor positive (reference-only): "I want to control my smart bulbs — here's the GitHub repo: https://github.com/example/repo. What's the API base URL?"
+Anchor negative: code block containing `requests.get("https://example.com/data.json")` — URL inside code the user is asking about, not a directive to fetch.

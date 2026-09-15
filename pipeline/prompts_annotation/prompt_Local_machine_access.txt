@@ -1,0 +1,12 @@
+# Label: Local machine access
+Label: "Local machine access"
+
+Definition:
+The prompt asks the LLM to access, inspect, modify, or run software on the user's local machine.
+
+Examples of conversations where the label APPLIES:
+C12: a user debugging a program began with "please help" and a traceback, then later asked "where did it download the file to or attempt to?"
+
+Boundary cases where the label does NOT apply:
+Asking for instructions that can be performed by the user on their  local machine: "How do I find what version of Python I have installed?"  "How do I install X?"
+Pasting a local file path as context for debugging without asking the LLM to access it (e.g., "the file is here: C:\Users\..." within a debugging conversation).

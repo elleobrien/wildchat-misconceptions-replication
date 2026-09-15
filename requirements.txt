@@ -1,0 +1,5 @@
+openai>=1.40.0        # OpenAI-compatible client, used by all run scripts
+tqdm>=4.65.0
+pyarrow>=15.0.0
+huggingface_hub>=0.23 # data/download_wildchat.py
+pandas>=2.0          # analysis/ scripts

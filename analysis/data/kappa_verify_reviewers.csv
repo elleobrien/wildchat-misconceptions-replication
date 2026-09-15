@@ -1,0 +1,5 @@
+comparison,n_conversations,n_cells,agreement,kappa,n_excluded_not_english,n_elle_relabelings,n_elle_relabelings_not_english
+elle_preflip_vs_grischa,100,800,0.9925,0.9524,0,4,0
+elle_preflip_vs_sebastian,100,800,0.995,0.9665,0,2,0
+elle_preflip_vs_antonio,97,776,0.9858,0.907,3,5,2
+elle_final_vs_opus,298,2384,0.9832,0.8913,2,,

@@ -1,0 +1,17 @@
+# Label: Non-text output
+Flag if any user turn asks the assistant to directly produce a non-textual artifact — an image, plot, chart, figure, diagram, audio clip, video, map, or other visual — as the deliverable, with no indication code would be acceptable.
+Look for:
+
+Direct requests for the visual as deliverable: "give me a graph of X", "show me a plot of Y", "draw a diagram of Z", "produce a wind rose", "generate a chart".
+Requests to modify or restyle a visual the assistant is presumed to have produced ("make the eyes more oval", "fix the scaling on that image").
+Any prompt whose literal request, taken at face value, demands a pixel-based or audio-based output.
+
+Do NOT flag if:
+
+The user explicitly asks for code that produces the visual ("write Python that plots the data").
+The user asks for an ASCII representation or a markdown table.
+
+If the user asks for "a plot" but the surrounding context is clearly code-tutorial (e.g., a homework assignment about matplotlib), flag it anyway — the misconception was present at prompt time even if the user later accepts a code response. Human annotators will decide.
+Anchor positive: "give me a wind rose plot for Boston in October 2022."
+Anchor positive (ambiguous): "Create a bar chart of inflation across these 5 economies."
+Anchor negative: "Write Python code that plots stock prices for the last 5 years."

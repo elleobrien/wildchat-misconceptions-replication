@@ -1,0 +1,17 @@
+# Label: Local machine access
+Flag if any user turn asks the assistant to perform an action on the user's local machine OR asks the assistant to report local file locations, file contents, or environment state — opening files, running commands, inspecting the file system, looking up where a file lives, or checking what's installed.
+Look for:
+
+Imperative verbs (open, run, execute, check, read, inspect, access, look at) directed at local resources: "open this file", "run it in my terminal", "check what's in my home directory", "look at my project folder".
+Local file paths — Windows (C:\Users\…), Unix (/home/user/…, ~/…), or references to Desktop, Documents, Downloads, cache folders — accompanied by language suggesting the assistant should access them rather than just know about them.
+Requests for the assistant to check or verify properties of the user's environment that would require local access, framed as a request to the assistant rather than as a request for instructions.
+Questions that presuppose the assistant can locate or inspect local files/state: "where on disk did you save the cached model?", "what folder did the file land in?", "did it end up in my Downloads?", "is X already installed?". Asking *about* a local location or local state — as if the assistant could check — is itself the misconception. The assistant has no way to know without accessing the machine.
+
+Do NOT flag if:
+
+The user is asking how to perform an action ("how do I run this in my terminal?", "what command checks my Python version?"). These are requests for instructions, not for the assistant to act.
+The user describes their local environment as information for the assistant to reason about, not as something to access.
+
+Anchor positive: "where on disk did you save the cached model?"
+Anchor negative: "How do I find what version of Python I have installed?"
+Anchor negative (path-as-context): "My model is at C:\Users\foo\model.bin. Why is loading so slow?"

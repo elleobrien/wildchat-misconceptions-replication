@@ -1,0 +1,17 @@
+# Label: Code Execution
+Flag if any user turn asks the assistant to actually run or execute code and report what happens, or implies the assistant has just done so.
+Look for:
+
+Imperative requests for execution directed at the assistant ("run this", "execute it", "go ahead and try"), especially following a code block the assistant has produced or the user has shared.
+Requests for the literal runtime output: "what does this print?", "what's the output when I pass X?", "tell me the result of running this".
+Questions presuming the assistant ran something: "did you run it?", "did you invoke that helper?", "what did you get when you executed it?".
+User-pasted instructions to "click Run" or "press Run" directed at the chatbot (often appears in copy-pasted homework).
+
+Do NOT flag if:
+
+The user is asking for code that, when they run it, produces some result ("write a function that prints X").
+The user pastes runtime output themselves (e.g., a traceback) and asks the assistant to interpret it — that's debugging help.
+The user asks the assistant to mentally trace through code without executing it ("walk through this loop for n=3").
+
+Anchor positive: "go ahead and try it with input 5 — what does it print?"
+Anchor negative: "Write a function that processes input 5 and returns the result."

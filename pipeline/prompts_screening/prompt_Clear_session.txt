@@ -1,0 +1,14 @@
+# Label: Clear session
+Flag if any user turn asks the assistant to clear, delete, reset, wipe, or otherwise erase the conversation history — invoking what the user presumes is a system-level command.
+Look for:
+
+Direct commands to clear chat state: "clear the chat", "reset everything", "reset our conversation", "delete what you remember", "wipe the history"
+Imperative "clear X" directed at the chat where X reads like an artifact in the chat context — "clear this page", "clear this", "clear it" — count these even when the surrounding conversation involves notebooks, IDEs, or other software the phrase could superficially apply to. A bare imperative is a clear-session request unless it's framed as a how-to question.
+
+Do NOT flag if:
+
+The user is initiating a semantic restart of the conversation ("let's try a different approach", "ignore that, try this instead"). Normal redirection is not a clear-session request.
+The user says "ignore previous instructions" — prompt-injection idiom.
+
+Anchor positive: "clear the page"
+Anchor negative: "Let's start over with a new approach."

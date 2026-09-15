@@ -1,0 +1,30 @@
+conv_id,hash,mircea_initial,mircea_updated,sebastian,grischa,gold
+C1,0df67725e948af8971e234fcf31bdca4,#llms-should-do-your-homework,Web Access,Web Access,Web Access,Web Access
+C2,1c0520993fa2ea37fa307edb4f288080,#llms-should-do-your-homework,Web Access,Web Access,Web Access|Non-text Output,Non-text Output|Web Access
+C3,279527db70a671b914aa457cfa3485dc,#llms-should-do-your-homework,Code Execution,Code Execution,Code Execution,Dynamic Analysis
+C4,2848cb483c2313e95938136ff8d2f137,No Misconceptions|#llms-should-do-your-homework,Session Memory,Session Memory,Session Memory,Session Memory
+C5,326965015cb841e4c563e0a9ab06ff7c,No Misconceptions,No Misconceptions,No Misconceptions,No Misconceptions,Dynamic Analysis
+C6,3d89d0c018902a1e51ebf20fb63ec440,No Misconceptions,Continuous Training,No Misconceptions,Continuous Training,Continuous Training
+C7,41513ee525925b92a208d8954d0d3a39,Continuous Training,maybe Web Access - not convinced,Web Access,Non-text Output,Web Access|Non-text Output
+C8,55c3d96c6be2793bd31c39bd618ca28d,#expecting-mindreading,No Misconceptions,No Misconceptions,No Misconceptions,Dynamic Analysis
+C9,5b71370a72574ab2be8c1d5bb201fc8d,No Misconceptions,"not convinced, but could be interpretd as Web Access",Web Access,No Misconceptions,Web Access
+C10,5ba8eb9c9caa5bc09bd9244e4a42a3a0,No Misconceptions,No Misconceptions,No Misconceptions,Dynamic Analysis,Dynamic Analysis
+C11,5d86939d20b546666c560c905c9a7039,#expecting-mindreading,Web Access?,No Misconceptions,No Misconceptions,Restrict sources|Web Access
+C12,61041b2ac6e5b38bc0e76dc045d388c8,No Misconceptions,i tend to go with No Misconceptions.,Local machine access,Local machine access,Dynamic Analysis|Local machine access
+C13,673d045f441ad03422b93f9f5e1dcd68,No Misconceptions|Continuous Training,No Misconceptions|Continuous Training,No Misconceptions,Continuous Training,Continuous Training|Web Access
+C14,68a5836db0aaaf0526d290228d34dd49,generate-code-w/o-any-domain-knowledge,Web Access,Web Access,Web Access,Web Access
+C15,7839f458b07f6b0acce4c4ce1fb75e0d,generate-code-w/o-any-domain-knowledge,No Misconceptions,No Misconceptions,No Misconceptions,Session Memory
+C16,78ceda3212104ede79330d14d3660e83,#llms-should-do-your-homework|generate-code-w/o-any-domain-knowledge,No Misconceptions,No Misconceptions,No Misconceptions,Web Access|Algebra
+C17,92556e1b331800f1624cedfc59ce601e,No Misconceptions,No Misconceptions,No Misconceptions,Other Agentic Behavior,Local machine access|Code Execution
+C18,a5bec537d390956972d94d29ff96f417,generate-code-w/o-any-domain-knowledge,Web Access,Web Access,Web Access,Web Access
+C19,ad821ccc847eb448050c412bcfd138e6,No Misconceptions,No Misconceptions,Session Memory,No Misconceptions,Dynamic Analysis
+C20,b598dd054ef29cf7782865cff738a864,Web Access|#expecting-mindreading|Local machine access,Web Access,Web Access|Code Execution,Web Access|Local machine access,Web Access
+C21,b7a14db4a5159f22efd51c436258ca96,No Misconceptions,"depending on what you read in the ""using VS Code""... you could consider this Other Agentic Behavior indeed",No Misconceptions,Other Agentic Behavior,Other Agentic Behavior
+C22,bbbae0f9a20cae245bbbc7f99954daf4,No Misconceptions,No Misconceptions,Algebra,No Misconceptions,Algebra
+C23,bcd5c3947ec57c6aedddccff4df6c904,No Misconceptions|generate-code-w/o-any-domain-knowledge,No Misconceptions,No Misconceptions,Dynamic Analysis,Dynamic Analysis
+C24,df0f16f89a0dc36a4533cbffea72f89e,#llms-should-do-your-homework,Web Access,Web Access,Web Access,Web Access
+C25,e88e534238c277aa8ca5fd706a6d80b4,giving-away-your-secrets-to-the-robot,No Misconceptions,No Misconceptions,No Misconceptions,Code Execution|Web Access
+C26,ec9ec3cf14894e889ec851eab76a27df,Code Execution|Local machine access,Code Execution|Local machine access,Code Execution,Code Execution,Code Execution
+C27,ecc8ee6079d92f70f043269cc8915f8c,No Misconceptions,No Misconceptions,No Misconceptions,No Misconceptions,Non-text representations needed|Algebra
+C28,f0aaa97938fdc477cfd6939bb3d9d5bc,#llms-should-do-your-homework,No Misconceptions,Web Access|Code Execution,Clear session,Web Access|Clear session
+C29,f86622f2ea7b75d85b4d99b556613103,No Misconceptions,No Misconceptions,Web Access|Code Execution,No Misconceptions,Web Access

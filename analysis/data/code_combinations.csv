@@ -1,0 +1,20 @@
+"combo","k","n","pct_of_labeled"
+"Internet Access",1,208,46.2222222222222
+"Algebra",1,76,16.8888888888889
+"Code Execution",1,68,15.1111111111111
+"Non-text output",1,51,11.3333333333333
+"Session memory",1,7,1.55555555555556
+"Code Execution + Internet Access",2,6,1.33333333333333
+"Algebra + Code Execution",2,5,1.11111111111111
+"Clear session",1,5,1.11111111111111
+"Continuous training",1,5,1.11111111111111
+"Local machine access",1,5,1.11111111111111
+"Algebra + Non-text output",2,3,0.666666666666667
+"Code Execution + Internet Access + Non-text output",3,3,0.666666666666667
+"Internet Access + Non-text output",2,2,0.444444444444444
+"Algebra + Internet Access",2,1,0.222222222222222
+"Code Execution + Local machine access",2,1,0.222222222222222
+"Code Execution + Non-text output",2,1,0.222222222222222
+"Continuous training + Internet Access",2,1,0.222222222222222
+"Local machine access + Non-text output",2,1,0.222222222222222
+"Non-text output + Session memory",2,1,0.222222222222222

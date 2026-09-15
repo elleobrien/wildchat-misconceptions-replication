@@ -1,0 +1,12 @@
+# Label: Continuous training
+Label: "Continuous training"
+
+Definition:
+The prompt assumes the LLM has knowledge that postdates its training cutoff, typically by asking for "latest", "current", or "up-to-date" content for libraries or APIs known to evolve.
+
+Examples of conversations where the label APPLIES:
+C6: "Use latest telethon to delete messges [sic] in group that are sent by me."
+C13: "Migrate this code to the latest openai api."
+
+Boundary cases where the label does NOT apply:
+Specifying a known stable version ("use numpy 1.20") is not a misconception.

@@ -1,0 +1,16 @@
+key,value
+opus_reviewed_convs,953
+auto_non_english,104
+non_english_restored,1
+manual_non_english,23
+net_non_english_excluded,126
+dup_copies_removed,29
+dup_clusters,16
+non_english_dup_overlap,3
+first_turn_clusters_collapsed,32
+first_turn_convs_removed,47
+first_turn_removed_labeled,20
+first_turn_removed_ia,18
+first_turn_removed_ce,1
+first_turn_removed_alg,1
+in_corpus_convs,754

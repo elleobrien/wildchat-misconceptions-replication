@@ -1,0 +1,13 @@
+# Label: Non-text output
+Label: "Non-text output"
+
+Definition:
+The prompt asks the LLM to directly produce a non-text artifact (image, plot, audio, video) as the deliverable.
+
+Examples of conversations where the label APPLIES:
+C7: “give me a meteogram in port of genoa on June 7, 2020."
+C2: ". The data file eu2.csv (available from [GitHub Link] contains the percapita gross domestic product (GDP) in PPS of seven EU countries. [...] Create a line plot of the PPS in the 6 countries"
+
+Boundary cases where the label does NOT apply:
+"Write Python code that produces a plot of X" — deliverable is code, not the plot.
+Whole-conversation rule: if the user appears satisfied with a code response, default to No Misconception. This includes accepting the code implicitly, e.g. by continuing to refine the request in follow-up turns without objecting to having received code.

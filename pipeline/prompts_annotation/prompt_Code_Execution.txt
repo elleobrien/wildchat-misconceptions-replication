@@ -1,0 +1,15 @@
+# Label: Code Execution
+Label: "Code Execution"
+
+Definition:
+The prompt requests the LLM to execute a program. Must explicitly reference running/executing code or asking for the literal output of execution.
+
+Examples of conversations where the label APPLIES:
+C3: "make the code run and check for input 5."
+C26: "Click Run and watch the stage to see what's wrong."
+C26 (follow-up): "did you call the function to make it run?"
+
+Boundary cases where the label does NOT apply:
+Asking the LLM to trace code by hand or predict output ("walk through this loop for n=3") 
+Asking for code that implements a computation.
+Whole-conversation rule: if the user appears satisfied with a code response, default to No Misconception.

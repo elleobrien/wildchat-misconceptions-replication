@@ -1,0 +1,18 @@
+# Label: Continuous training
+Flag if any user turn asks the assistant to use the "latest", "newest", "current", or "up-to-date" version of a library, API, framework, or external service — implying the assistant has post-training-cutoff knowledge.
+Look for:
+
+The words latest, newest, current, up-to-date, up to date, most recent, recently released applied to a library, API, package, framework, or web service the user wants the assistant to use.
+Phrases like "upgrade this to the newest [X] SDK", "port this to the current version of [Y]", "use the recently released [library]".
+
+Do NOT flag if:
+
+The user names a specific stable version ("use numpy 1.20", "Python 3.9", "openai==0.27").
+The user is asking what the latest version is — that's an information question, not an assumption that the assistant has access.
+"Latest" or "newest" refers to the user's own code or files ("use my latest version of this function", "the newest file I shared").
+The user asks for "modern" or "idiomatic" code without invoking recency claims about specific external libraries.
+
+Anchor positive: "Use the newest version of pyrogram to forward messages from a channel..."
+Anchor positive: "Upgrade this script to the newest version of the Stripe SDK."
+Anchor negative: "Write code using numpy 1.20 syntax."
+Anchor negative: "Use my latest version of the helper function I just shared."
